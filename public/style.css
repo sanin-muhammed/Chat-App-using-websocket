@@ -1,0 +1,148 @@
+/* -----    GOOGLE FONTS : POPPINS    ----- */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap");
+
+/*-----    MAIN CSS    -----*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+}
+
+.title {
+    margin: 10px 0;
+    color: #fff;
+}
+.main {
+    width: 330px;
+    border: 8px solid #5c5c5c;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.name {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    color: #b1acac;
+    background: #727272;
+    padding: 10px;
+    align-items: center;
+}
+.name span {
+    color: #fff;
+}
+
+.name-input {
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    width: 100%;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    background: #2d2d2d9c;
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.message-container::-webkit-scrollbar {
+    width: 5px;
+    background: #2d2d2d;
+}
+.message-container::-webkit-scrollbar-thumb {
+    background: #78787872;
+    border-radius: 10px;
+    display: block;
+}
+.message-left,
+.message-right {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 19px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+.message-left {
+    border-radius: 20px 20px 20px 0;
+    align-self: flex-start;
+    background: #525252;
+    color: #f6f6f6;
+    box-shadow: 0px 0px 4px #dcdcdc;
+}
+.message-right {
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background: #2d2d2d;
+    color: #f6f6f6;
+    box-shadow: 0px 0px 4px #dcdcdc;
+}
+.message span {
+    display: block;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 4px;
+}
+.feedback {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    padding: 0 16px 16px 16px;
+    color: #ffffffc6;
+}
+.message-form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.message-input {
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 12px;
+    background: #2d2d2dfd;
+    color: #fff;
+}
+
+.send-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    background: #2d2d2dfd;
+    cursor: pointer;
+    border-left: 3px solid #dddddd;
+    color: #fff;
+}
+.send-button i {
+    font-size: 10px;
+}
+.clients-total {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #7e7e7e;
+}
