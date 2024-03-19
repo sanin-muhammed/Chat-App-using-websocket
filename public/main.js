@@ -8,17 +8,18 @@ const messageInput = document.getElementById("message-input");
 const messageTone = new Audio('/public_message-tone.mp3')
 
 messageForm.addEventListener("submit", (e) => {
-    
+    // not reload the page  
     e.preventDefault();
     sendMessage();
 });
 
 function sendMessage() {
     if (messageInput.value === "") return;
+    let date = new Date()
     const data = {
         name: nameInput.value,
         message: messageInput.value,
-        dateTime: new Date(),
+        dateTime: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`,
     };
     socket.emit("message", data);
     addMessageToUI(true, data);
